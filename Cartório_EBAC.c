@@ -129,7 +129,8 @@ int main()
 		printf("Escolha a opção desejada:\n\n");
 		printf("\t1) Registrar nomes \n");
 		printf("\t2) Consultar nomes \n");
-		printf("\t3) Apagar nomes \n\n");
+		printf("\t3) Apagar nomes \n");
+		printf("\t4) Sair do sistema \n\n");
 		printf("Digite aqui: "); //fim do menu
 
 		scanf("%d", &opcao); //armazena a opção do usuário 
@@ -148,6 +149,11 @@ int main()
 				
 				case 3: //se o usuário digitar "3",
 				apagar(); //execute a função "apagar"
+				break;
+				
+				case 4:
+				printf("Obrigado por utilizar o sistema! Até mais!");
+				return 0;
 				break;
 				
 				default: //para qualquer outra situação, informe:
